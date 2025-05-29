@@ -1,5 +1,5 @@
 import pytest
-from my_module.calculations import add, subtract, multiply, divide
+from my_module.calculations import add, subtract, multiply, divide, power
 
 def test_add():
     assert add(2, 3) == 5
@@ -30,3 +30,11 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError, match="Cannot divide by zero..."):
         divide(10, 0)
+
+def test_power():
+    assert power(2, 3) == 8
+    assert power(5, 0) == 1
+    assert power(10, 1) == 10
+    assert power(2, -1) == 0.5
+    assert power(-2, 3) == -8
+    assert power(-2, 2) == 4
