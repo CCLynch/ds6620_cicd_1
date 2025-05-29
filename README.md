@@ -45,4 +45,5 @@ This project uses GitHub Actions for CI. Any push to the `main` branch will auto
 If all tests pass, the build is considered successful.
 
 ### CI Status
-<!-- Add CI Status Badge here in the next step! -->
+
+[![Python CI](https://github.com/CCLynch/ds6620_cicd_1/actions/workflows/ci.yml/badge.svg)](https://github.com/CCLynch/ds6620_cicd_1/actions/workflows/ci.yml)
